@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT e2.lastName as employee, e1.lastName as manager FROM Person e1 LEFT JOIN Person e2 ON e1.ID = e2.Address WHERE e1.Address IS NULL OR e2.lastName IS NOT NULL OR e2.Address IS NULL
