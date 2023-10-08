@@ -3,5 +3,5 @@
 
 
 Collection of my answers to algorithmic problems on leetcode\
-Solved regularly within months\
+Solved regularly within months and to this day\
 Profile: https://leetcode.com/MichalMroz21/
