@@ -9,13 +9,12 @@ public:
         for(int i = 0; i < garbage.size(); i++){
             for(auto& j : garbage[i]){
                 ans++;
-                lastPos[j] = max(lastPos[j], i + 1);
+                lastPos[j] = max(lastPos[j], i);
             }
         }
 
         for(auto& [key, value] : lastPos){
-            if(value == 0) continue;
-            for(int i = 0; i < value - 1; i++) ans += travel[i];
+            for(int i = 0; i < value; i++) ans += travel[i];
         }
 
         return ans;
