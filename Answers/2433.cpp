@@ -4,7 +4,7 @@ public:
         
         int currXor{};
 
-        for(auto& i : pref){
+        for(auto i : pref){
 
             int x = currXor ^ i;
             i = x;
