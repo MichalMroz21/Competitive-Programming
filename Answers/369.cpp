@@ -10,26 +10,33 @@
  */
 class Solution {
 public:
+
     ListNode* plusOne(ListNode* head) {
+        ListNode* rightMost{};
+        ListNode* root{head};
 
-        ListNode* sentinel = new ListNode(0);
-        sentinel->next = head;
-        ListNode* notNine = sentinel;
+        while(head){
 
-        while (head != nullptr) {
-            if (head->val != 9) notNine = head;
+            if(head->val != 9) rightMost = head;
             head = head->next;
         }
 
-        notNine->val++;
-        notNine = notNine->next;
+        if(rightMost) head = rightMost->next;
+        else head = root;
 
-        while (notNine != nullptr) {
-            notNine->val = 0;
-            notNine = notNine->next;
+        while(head){
+            head->val = 0;
+            head = head->next;
         }
 
-        delete notNine;
-        return sentinel->val != 0 ? sentinel : sentinel->next;
+        if(rightMost) rightMost->val++;
+
+        else {
+            ListNode* ret = new ListNode(1);
+            ret->next = root;
+            return ret;
+        }
+
+        return root;
     }
 };
