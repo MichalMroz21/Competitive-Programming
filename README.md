@@ -3,5 +3,5 @@
 
 Profile: https://leetcode.com/MichalMroz21/ \
 Collection of my answers to DSA problems on Leetcode\
-Solved regularly within months and to this day\
+Solved regularly within months and to this day
 
