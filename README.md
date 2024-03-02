@@ -1,4 +1,4 @@
-# Leetcode
+# Competitive Programming
 
 Collection of my answers to DSA problems\
 Solved regularly within months\
