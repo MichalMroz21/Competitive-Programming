@@ -1,49 +1,20 @@
 class Solution {
 public:
-    
-   bool isDigit(char ch) {
-    // Check if the character is between '0' and '9'
-    return (ch >= '0' && ch <= '9');
-}
-    bool isUppercase(char ch) {
-    // Check if the character is in the range of uppercase letters
-    return (ch >= 'A' && ch <= 'Z');
-}
-    bool isConsonant(char ch) {
-    // Convert the character to lowercase for ease of comparison
-    ch = tolower(ch);
+    unordered_map<char, bool> vowelMap{
+        {'a', true}, {'e', true},
+        {'i', true}, {'o', true},
+        {'u', true}
+    };
 
-    // Check if the character is an alphabet and not a vowel
-    return isalpha(ch) && !(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
-}
-    bool isVowel(char ch) {
-    // Convert the character to lowercase for ease of comparison
-    ch = tolower(ch);
+    bool isValid(string word) {
+        uint8_t hasVowCons{};
 
-    // Check if the character is one of the vowels
-    return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
-}
-bool isValid(string word) {
-    if (word.size() < 3) return false;
+        for(auto i : word) {
+            if(!isalnum(i)) return false;
+            i = tolower(i);
+            hasVowCons |= vowelMap[i] + 2 * (!vowelMap[i] && isalpha(i));
+        }
 
-    bool hasDigit = false;
-    bool hasUppercase = false;
-    bool hasConsonant = false;
-    bool hasVowel = false;
-
-    for (char ch : word) {
-        if (isdigit(ch)) hasDigit = true;
-         if (isUppercase(ch)) hasUppercase = true;
-         if (isConsonant(ch)) hasConsonant = true;
-     if (isVowel(ch)) hasVowel = true;
-        
-        if(!(( isdigit(ch) || isUppercase(ch)) || isConsonant(ch) ||isVowel(ch)) )
-            return false;
-            cout<<isConsonant(ch)<<" ";
-
+        return hasVowCons == 3 && word.size() >= 3;
     }
-    cout<< hasDigit<<hasUppercase<<hasConsonant<<hasVowel<<endl;
-
-    return( hasDigit || hasUppercase) && hasConsonant && hasVowel;
-}
 };
