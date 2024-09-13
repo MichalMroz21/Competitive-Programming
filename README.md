@@ -8,5 +8,6 @@ Solved regularly within months\
 <img src="https://github.com/user-attachments/assets/a41c0de8-4cdd-4ed8-b038-ee6448b85088" alt="drawing" width="75"/>
 
 ## Leetcode
-<img src="https://github.com/MichalMroz21/Leetcode/assets/125133223/adbefed5-ad07-497f-81ac-03c3e21b8170" alt="drawing" width="75">
 Profile: https://leetcode.com/MichalMroz21/
+<img src="https://github.com/MichalMroz21/Leetcode/assets/125133223/adbefed5-ad07-497f-81ac-03c3e21b8170" alt="drawing" width="75">
+
