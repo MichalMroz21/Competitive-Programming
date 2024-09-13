@@ -1,7 +1,7 @@
 # Competitive-Programming
 
-Collection of my answers to DSA problems\
-Solved regularly within months
+Collection of my answers to various Data Structures & Algorithms problems\
+Solved regularly within months on LeetCode in C++20 & MySQL
 
 ## Technologies
 <img src="https://github.com/user-attachments/assets/b8d54108-bfae-48b7-b65d-ae11be0e650a" alt="drawing" width="75"/>
