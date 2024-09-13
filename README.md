@@ -8,6 +8,6 @@ Solved regularly within months on LeetCode in C++20 & MySQL
 <img src="https://github.com/user-attachments/assets/a41c0de8-4cdd-4ed8-b038-ee6448b85088" alt="drawing" width="75"/>
 
 ## LeetCode
-Profile contains more information & statistics about solved problems
+Profile contains more information & statistics about solved problems\
 LeetCode Profile: https://leetcode.com/MichalMroz21/
 
