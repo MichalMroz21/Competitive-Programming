@@ -9,5 +9,4 @@ Solved regularly within months\
 
 ## Leetcode
 Profile: https://leetcode.com/MichalMroz21/
-<img src="https://github.com/MichalMroz21/Leetcode/assets/125133223/adbefed5-ad07-497f-81ac-03c3e21b8170" alt="drawing" width="75">
 
